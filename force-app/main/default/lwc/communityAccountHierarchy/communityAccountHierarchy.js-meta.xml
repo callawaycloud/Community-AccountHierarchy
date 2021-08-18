@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>52.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>Account Hierarchy</masterLabel>
+    <description
+  >Display accounts the user has access to in a tree view.</description>
+    <targets>
+        <target>lightningCommunity__Page</target>
+        <target>lightningCommunity__Default</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightningCommunity__Default">
+            <property
+        name="numberOfRecords"
+        label="Number of Records"
+        type="Integer"
+        default="1000"
+        description="The number of records to retrieve."
+        required="true"
+      />
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>
